@@ -178,6 +178,13 @@
             z-index: -1;
         }
 
+        .backupIMG {
+            display: none;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
         .infoSec {
             margin-bottom: 25px;
         }
@@ -371,6 +378,14 @@
                 font-size: 40px;
             }
 
+            .introImg img:not(.backupIMG) {
+                display: none;
+            }
+
+            .backupIMG {
+                display: flex;
+            }
+
             .serviceSec {
                 flex-wrap: wrap;
                 gap: 30px;
@@ -389,9 +404,9 @@
         <img class="logo" src="TechNet Logo.png" alt="TechNet Logo">
         <nav>
             <ul class="nav-links">
-                <li><a href="https://bariso-jian.github.io/TechNet-Introduction/">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#aboutUs">About us</a></li>
-                <li><a href="https://bariso-jian.github.io/TechNet-ContactUs/">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
                 <li><a href="#"><button>New Deals</button></a></li>
             </ul>
         </nav>
@@ -412,6 +427,7 @@
 
         <div class="introImg">
             <img src="extremely enhanced cpu background.webp" alt="CPU Tech Image">
+            <img src="Backup CPU background.webp" alt="Alternative CPU Tech Image" class="backupIMG">
         </div>
     </section>
 
@@ -500,4 +516,3 @@
 </body>
 
 </html>
-
